@@ -7,7 +7,7 @@ class UploadService
     {
         libxml_use_internal_errors(true);
 
-        $xml_to_check_err = @simplexml_load_file($file);
+        $xml = @simplexml_load_file($file);
         $err = libxml_get_errors();
 
         if (count($err) > 0)
@@ -32,10 +32,10 @@ class UploadService
             }
 
             $xml_implode = implode("", $rows);
-            $full_xml = simplexml_load_string($xml_implode);
+            $xml = simplexml_load_string($xml_implode);
         }
 
-        return $full_xml;
+        return $xml;
     }
     public function upload($files)
     {
