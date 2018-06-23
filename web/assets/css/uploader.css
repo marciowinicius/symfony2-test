@@ -1,0 +1,18 @@
+#upload-form {
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    padding: 12px;
+}
+#upload-field {
+    display: inline-block;
+    margin-right: 12px;
+}
+#drop-files {
+    border: 3px dotted #CCCCCC;
+    color: #CCCCCC;
+    display: block;
+    height: 300px;
+    padding: 140px;
+    text-align: center;
+    width: 100%;
+}
